@@ -29,7 +29,15 @@
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
-
+    
+    <!-- Blaze Maintainer  -->
+    <Preference
+        android:key="Blaze_maintainer"
+        android:title="@string/Blaze_maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BlazeMaintainerPreferenceController"/>
+    
     <!-- Security patch -->
     <Preference
         android:key="security_key"
