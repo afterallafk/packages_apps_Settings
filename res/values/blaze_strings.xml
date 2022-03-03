@@ -24,5 +24,8 @@
     
     <!-- Blaze Maintainer -->
     <string name="Blaze_maintainer">Device Maintainer</string>
+    
+    <!-- Blaze version preference -->
+    <string name="Blaze_version">"Blaze version"</string>
 
 </resources>
