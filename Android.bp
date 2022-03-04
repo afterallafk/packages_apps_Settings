@@ -44,7 +44,10 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "BlazeHouse/src/**/*.java",],
+    srcs: ["src/**/*.java", 
+	   "BlazeHouse/src/**/*.java",
+    ],
+    
     resource_dirs: [
         "res",
         "res-pixel",
@@ -52,8 +55,9 @@ android_library {
         "BlazeHouse/res",
     ],
     
-    aaptflags: ["--extra-packages org.projectblaze.blazehouse",
-                "--extra-packages github.com.st235.lib_expandablebottombar",],
+    aaptflags: ["--extra-packages com.blaze.house",
+                "--extra-packages github.com.st235.lib_expandablebottombar",
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
