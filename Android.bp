@@ -44,12 +44,16 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java", "BlazeHouse/src/**/*.java",],
     resource_dirs: [
         "res",
         "res-pixel",
-        "TouchGestures/res"
+        "TouchGestures/res",
+        "BlazeHouse/res",
     ],
+    
+    aaptflags: ["--extra-packages org.projectblaze.blazehouse",
+                "--extra-packages github.com.st235.lib_expandablebottombar",],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -80,6 +84,12 @@ android_library {
         "lottie",
         "custom-preference",
         "SettingsGoogle-lib",
+        "expandable-bottombar",
+        "androidx.navigation_navigation-common-ktx",
+        "androidx.navigation_navigation-fragment-ktx",
+        "androidx.navigation_navigation-runtime-ktx",
+        "androidx.navigation_navigation-ui-ktx",
+        "kotlin-stdlib",
         "vendor.lineage.fastcharge-V1.0-java",
         "faceunlock_framework",
     ],
@@ -139,4 +149,10 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+android_library_import {
+    name: "expandable-bottombar",
+    aars: ["libs/lib-expandablebottombar-release.aar"],
+    sdk_version: "current",
 }
