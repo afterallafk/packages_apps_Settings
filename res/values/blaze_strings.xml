@@ -13,11 +13,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-     <!-- Blaze -->
-     <string name="extensions_title">Blaze extensions</string>
+    <!-- Blaze -->
+    <string name="blaze_title">BlazeHouse</string>
+    <string name="extensions_title">Blaze extensions</string>
     <string name="build_tweaks_summary_title">Blaze customizations</string>
     
-     <!-- SELinux Status -->
+    <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
